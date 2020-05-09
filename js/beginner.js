@@ -1,14 +1,14 @@
 "user script";
 
 function check(a, x) {
-    return a.includes(x);
-    // for (let i=0; i<a; i++) {
-    //     if (a[i] === x ){
-    //         return true;
-    //     } else {
-    //         return false;
-    //     }
-    // }
+    // return a.includes(x);
+    let answer = false;
+    for (let i=0; i<a.length; i++) {
+        if (a[i] === x ){
+            answer=true;
+        }
+    }
+    return answer;
 }
 
 console.log(check([66, 101], 66), true);
